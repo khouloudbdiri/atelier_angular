@@ -1,0 +1,21 @@
+<div class="form-signin w-50 m-auto">
+    <form (ngSubmit)="loginUser()"  class="row justify-content-center border border-secondary border-3 rounded p-5 position-absolute top-50 start-50 translate-middle">
+        <h3 class="h3 mb-3 font-weight-normal text-center" class="text-center pb-5" style="color: #EF9595;">Login</h3>
+        <div class="mb-3">
+            <label>Email</label>
+            <div class="mb-3">
+                <input type="text" class="form-control mt-2" id="email" name="email" placeholder="email" [(ngModel)]="email">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Password</label>
+            <div class="mb-3">
+                <input type="text" class="form-control mt-2" id="password" name="password" placeholder="password"
+                    [(ngModel)]="password">
+            </div>
+        </div>
+        <div class="d-grid" class="d-flex align-items-center justify-content-center">
+            <button  class="btn mt-3" style="background-color: #EF9595; color:white;" type="submit">Sign in</button>
+        </div>
+    </form>
+</div>

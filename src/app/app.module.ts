@@ -4,13 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http'; 
+import { ProductsModule } from './products/products.module'; 
+
+import { AuthentificationModule } from './authentification/authentification.module'; 
+
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
+
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule, 
+    ProductsModule,
+    AuthentificationModule,
+    ShoppingCartModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
